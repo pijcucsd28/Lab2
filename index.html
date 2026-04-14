@@ -7,29 +7,37 @@
   </head>
   <body>
     <header>
-        Welcome to my random page!
+        <h1>Meeting Minutes</h1>
+        <h2>4/14/2026</h2>
     </header>
     <hr />
     <main>
-        <h1>Welcome to main!</h1>
-        <p>Header 1.</p>
-        <hr />
+        <h2>Check in:</h2>
+        <label for="person-select">Who are you:</label>
 
-        <h2>Here's random information stored in my head:</h2>
-        
+        <select name="person" id="persent-select">
+        <option value="">--Please choose an option--</option>
+        <option value="John">John</option>
+        <option value="Ben">Ben</option>
+        <option value="Luke">Luke</option>
+        <option value="Alex">Alex</option>
+        <option value="Rianna">Rianna</option>
+        <option value="Peter">Peter</option>
+        </select>
 
-        <div class="evil text....">
-            <h3>Welcome to tiny text</h3>
-            <p>Tiny text has great features! Such as:</p>
-            <ul>
-                <li>It's visually pleasing!</li>
-                <li>Very cute!</li>
-                <li>Will never betray you!</li>
-            </ul>
-            <p>Beware tiny text... <strong> might be evil.</strong></p>
-        </div>
+        <p>Links to other meeting minutes for reference:</p>
+        <nav class="menu">
+        <ul>
+            <li><a href="#">Spring Break Meeting Minutes.</a></li>
+            <li><a href="#">Week 1 Meeting Minutes.</a></li>
+            <li><a href="#">Week 2 Meeting Minutes.</a></li>
+        </ul>
 
-        <h3>How to bake double chocolate chip cookies:</h3>
+    <hr />
+    <section>
+    <h2>Agenda:</h2>
+        <div>
+        <h3>We'll be looking over this recipe for the baking event:</h3>
         <img
         class="fit-picture"
         width="200"
@@ -61,41 +69,71 @@
                 then transfer them off the cookie sheet to cool on the wire rack to cool fully.
             </li>
         </ol>
-
-        <h3>Random diction!</h3>
+        </div>
+        <h3>Options for the word of the day:</h3>
         <p>The word <i>indubitably</i> is a really nice word...</p>
-        <p><em>Don't</em> get me started on brainrot though.</p>
+        <p><em>Don't</em> get me started on brainrot terms like "skibidi"...</p>
         <figure>
-            <figcaption>Here's an example... unfortunately:</figcaption>
+            <figcaption>For those who missed the week 2 meeting, this was the audio we sampled for the concert:</figcaption>
             <audio controls src="/mediafiles/9040b9c5-f713-4bfb-8f74-66f0d38c034b.mp3"></audio>
         </figure>
 
-        <p>Speaking of brainrot, here's a video I love.</p>
+        <label for="brain-rot-character">As per usual unfortunately, type your favorite brainrot character for the brainrot social
+            to see which one is most popular:</label>
+        <input list="brain-rot-lists" id="brain-rot-character" name="brain-rot-character" />
+
+        <datalist id="brain-rot-lists">
+        <option value="Tung Tung Sahur"></option>
+        <option value="Assassino Cappucino"></option>
+        <option value="Tralalero Tralala"></option>
+        <option value="Bombardino Crocodillo"></option>
+        <option value="Ballerina Cappucina"></option>
+        </datalist>
+
+        <p>We have this submission from other team members who suggested this video be covered.</p>
         <p><strong>(VOLUME WARNING)</strong></p>
         <video controls width="250">
             <source src="/mediafiles/trim.EE029878-CE40-4657-8E6C-1CDC7A109E17.mp4" type="video/mp4" />
         </video>
-
+    </section>
         
     </main>
-
-    <h4>hey.. over here..</h4>
+    <h2>UNFINISHED TASKS</h2>
     <details>
-        <summary>open this..</summary>
-        EVIL TEXT RAHHh
-    
+       <summary>Open Here</summary>
+        <ul>
+            <li><a href="#">Week 4 meeting minutes</a></li>
+            <li><a href="#">Egg Drop Competition</a></li>
+            <li><a href="#">Resume Builder Project</a></li>
+        </ul>
     </details>
 
-
+    <hr />
     <footer>
-        <span>All work maintained by the awesomest guy ever.</span>
-        Check out my other sites:
-        <nav class="menu">
-        <ul>
-            <li><a href="#">How to open an avocado.</a></li>
-            <li><a href="#">3001 ways to open a door.</a></li>
-            <li><a href="#">How to make a resume builder project.</a></li>
-        </ul>
+        <span>Type comments here for any suggestions on future meetings.</span>
+
+        <br />
+
+        <textarea id="comments" name="comments" rows="5" cols="33">
+        </textarea>
+
+        <p>Enter email for credit.:</p>
+
+        <form>
+        <label>
+            Email:
+            <input name="submitted-email" autocomplete="email" />
+        </label>
+        <button>Save</button>
+        </form>
+
+        <form method>   
+        <fieldset>
+            <legend>Would you like to enter the workplace raffle for a free pizza voucher?</legend>
+            <label><input type="radio" name="radio" value="yes" /> Yes</label>
+            <label><input type="radio" name="radio" value="no" /> No</label>
+        </fieldset>
+        </form>
 
         <p>Contact me at:</p>
 
@@ -104,7 +142,7 @@
             <li>That's it. Nothing else.</li>
         </ul>
 
-        <p>Located at:</p>
+        <p>Meetings located at:</p>
         UCSD<br />
         9500 Gilman Drive<br />
         La Jolla, CA<br />
